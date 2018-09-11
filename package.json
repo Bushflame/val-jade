@@ -1,0 +1,20 @@
+{
+  "name": "val-jade",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pug": "pug -w ./ -o ./ -P"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bushflame/val-jade.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bushflame/val-jade/issues"
+  },
+  "homepage": "https://github.com/Bushflame/val-jade#readme"
+}
