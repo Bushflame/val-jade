@@ -4,6 +4,9 @@ $lav=#806b00
 #majors 
     padding 3rem 1rem 
     background rgba(complement($val),.2)
+    .major:nth-child(1)
+        padding 0 1rem
+        text-align center
     header 
         max-width 740px
         margin auto
@@ -22,7 +25,7 @@ $lav=#806b00
     padding 0
     position relative
     figure 
-        margin 1.5rem
+        margin 1rem
         
     figcaption 
         position absolute
@@ -30,13 +33,17 @@ $lav=#806b00
         bottom 3rem
         left 4rem            
         padding .4rem
-        background rgba(complement($val),.8)
+        background rgba(complement($val),.5)
         box-shadow 6px 6px 12px rgba(0,0,0,.5)
+        h3 
+            text-align center
 .major.logo 
     margin 0 auto
 @media screen and (min-width: 620px)    
     .major
         margin 0
+        figure 
+            margin 1.5rem        
     .major-grid 
         display grid
         max-width 960px
