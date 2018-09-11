@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pug": "pug -w ./ -o ./ -P"
+    "pug": "pug -u rupture -w ./src/ -o ../site -P"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Bushflame/val-jade/issues"
   },
-  "homepage": "https://github.com/Bushflame/val-jade#readme"
+  "homepage": "https://github.com/Bushflame/val-jade#readme",
+  "dependencies": {
+    "nib": "^1.1.2",
+    "rupture": "^0.7.1"
+  }
 }

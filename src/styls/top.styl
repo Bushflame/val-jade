@@ -1,0 +1,70 @@
+@import'nib'
+$val=#001580
+$lav=#806b00    
+#top 
+    padding 1rem 0 0
+    background: linear-gradient(160deg, rgba(128,107,0,0.5), rgba(128,107,0,0.5) 60%, #806b00 60%, #806b00);
+    height:100% 
+    margin-top:0
+    .flext
+        background-image url('./img/dozerlf.png')
+        background-repeat no-repeat
+        background-size auto
+        background-position center center
+
+.intro 
+    padding 0
+    // background-image url('./img/dozer.png')
+    // background-repeat no-repeat
+    // background-size auto
+    // background-position center bottom
+    margin-bottom 0
+    align-self flex-start
+.logo 
+    max-width 350px
+    margin 0 auto
+h1 
+    color $val
+    font-size 2.4rem
+    text-align center
+    margin .2rem auto
+.title-tag 
+    color #fff
+    font-size 2rem
+    // padding 1rem 0
+    text-align center
+.quick-contact 
+    color $val
+    font-size 1.6rem
+    font-weight bold
+    text-align center
+    margin 0
+.features       
+    color #fff
+    font-size 1.8rem
+    text-align center
+    padding 1rem 0
+    margin-top 0
+    font-weight bold 
+.about 
+    // background rgba(complement($val),.4)
+    margin 0 
+    padding .6rem
+    text-align center
+p  
+    font-size 1.5rem
+    line-height 1.5
+@media screen and (min-width: 640px)  
+    .quick-contact 
+        padding 0
+    .features
+        font-size 1.6rem
+        padding-left 2rem
+        background transparent
+        text-align left 
+    .about 
+        margin-bottom 1rem
+    p 
+        font-size 1.2rem
+.end-top 
+    color orange            

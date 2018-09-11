@@ -1,0 +1,124 @@
+@import'nib'
+
+html 
+    height 100%
+body 
+    height 100%
+
+div
+header
+span
+figure
+figcaption 
+    box-sizing border-box
+    margin 0
+    padding 0
+//typography
+.site-title 
+h1
+    color $val
+    font-size 3.8rem 
+    text-align center
+    text-transform uppercase
+
+h2 
+    color $lav 
+    font-size 2.5rem
+    font-family: 'Raleway', sans-serif;
+    font-weight 200
+    text-transform uppercase
+    text-align center
+    margin 4rem 0
+    @media screen and (min-width: 720px)
+        font-size 4rem
+h3 
+    color $val 
+    font-size 1.4rem
+    text-align left
+    margin 0
+    line-height 1
+h4 
+    color orange 
+    font-size 1.4rem
+
+p  
+    font-size 1.1rem
+    line-height 1.5
+.tagline
+    font-size 1.3rem
+    text-align center
+    text-transform capitalize
+    margin 0
+    @media screen and (min-width: 640px)    
+        font-size 1.5rem
+.logo
+    display block
+    margin auto
+
+.section-footer
+    display flex
+    flex-direction column
+    max-width 600px
+    margin 2rem auto
+    .quick-contact
+        margin-top 0
+        font-size 1.2rem
+        line-height 1.2
+@media screen and (min-width: 600px)        
+    .section-footer
+        display flex
+        flex-direction row
+        justify-content center
+        align-items center
+        flex-wrap nowrap
+        .logo 
+            margin 0 0 0 auto
+            padding-right .4rem
+        .quick-contact
+            font-size 1.2rem
+            line-height 1.2
+            text-align left
+            margin 0.2rem auto 0 0
+            padding-left .4rem
+
+
+//flex-system
+.flext 
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    justify-content space-between
+    box-sizing border-box
+    max-width 1280px
+    margin auto
+.half 
+    padding 1rem
+    box-sizing border-box
+    @media screen and (min-width: 600px)  
+
+        width 49%
+
+.quarter
+    padding 1rem
+    margin 1rem 0
+    @media screen and (min-width: 440px)      
+        width 80%
+    @media screen and (min-width: 640px)          
+        width 50%
+    @media screen and (min-width: 720px)  
+        width 40%
+    @media screen and (min-width: 1020px)  
+        width 24%
+.third 
+    padding 1rem 
+    margin 0
+    box-sizing border-box
+    @media screen and (min-width: 440px)      
+        width 80%
+    @media screen and (min-width: 640px)  
+        width 49%
+    @media screen and (min-width: 960px)    
+        width 32%
+    
+.end-global 
+    color yellow
