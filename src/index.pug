@@ -5,6 +5,7 @@ html(amp, lang="en")
     title AMP via Jade
     link(rel="canonical", href="/index.html")
     meta(name="viewport", content="width=device-width,minimum-scale=1,initial-scale=1")
+    <script custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js" async></script>
     script(type="application/ld+json").
       {
         "@context": "http://schema.org",
@@ -132,54 +133,54 @@ html(amp, lang="en")
         p.tagline section tagline
       .carousel-wrap.carousel-preview
         .carousel
-          <amp-carousel id="carousel-with-preview"
-          width="261"
-          height="195"
-          layout="responsive"
-          type="slides">
-          <amp-img src="img/img1.jpg"
-          width="261"
-          height="195"
-            layout="responsive"
-            alt="a sample image"></amp-img>
-          <amp-img src="img/img2.jpg"
-          width="261"
-          height="195"
-            layout="responsive"
-            alt="a sample image"></amp-img>
-          <amp-img src="img/img3.jpg"
-          width="261"
-          height="195"
-            layout="responsive"
-            alt="a sample image"></amp-img>
-          <amp-img src="img/img4.jpg"
-          width="261"
-          height="195"
-            layout="responsive"
-            alt="a sample image"></amp-img>
-            <amp-img src="img/img5.jpg"
-          width="261"
-          height="195"
-            layout="responsive"
-            alt="a sample image"></amp-img>
-          <amp-img src="img/img6.jpg"
-          width="261"
-          height="195"
-            layout="responsive"
-            alt="a sample image"></amp-img>
-          <amp-img src="img/img7.jpg"
-          width="261"
-          height="195"
-            layout="responsive"
-            alt="a sample image"></amp-img>
-          <amp-img src="img/img8.jpg"
-          width="261"
-          height="195"
-            layout="responsive"
-            alt="a sample image"></amp-img>       
-        </amp-carousel>        
+          <amp-carousel id="carousel-with-preview" width="261" height="195" layout="responsive" type="slides">
+            <amp-img src="img/img1.jpg" width="261" height="195" layout="responsive" alt="a sample image"></amp-img>
+            <amp-img src="img/img2.jpg" width="261" height="195" layout="responsive" alt="a sample image"></amp-img>
+            <amp-img src="img/img3.jpg" width="261" height="195" layout="responsive" alt="a sample image"></amp-img>
+            <amp-img src="img/img4.jpg" width="261" height="195" layout="responsive" alt="a sample image"></amp-img>
+            <amp-img src="img/img5.jpg" width="261" height="195" layout="responsive" alt="a sample image"></amp-img>
+            <amp-img src="img/img6.jpg" width="261" height="195" layout="responsive" alt="a sample image"></amp-img>
+            <amp-img src="img/img7.jpg" width="261" height="195" layout="responsive" alt="a sample image"></amp-img>
+            <amp-img src="img/img8.jpg" width="261" height="195" layout="responsive" alt="a sample image"></amp-img>      
+          </amp-carousel>        
+        <button class='btn-1' on="tap:carousel-with-preview.goToSlide(index=0)">
+          <amp-img src="img/img1.jpg" width="65" height="48.5" layout="responsive" alt="a sample image"></amp-img>
+        </button>
+        <button class='btn-2' on="tap:carousel-with-preview.goToSlide(index=1)">
+          <amp-img src="img/img2.jpg" width="65" height="48.5" layout="responsive" alt="a sample image"></amp-img>
+        </button>
+        <button class='btn-3' on="tap:carousel-with-preview.goToSlide(index=2)">
+          <amp-img src="img/img3.jpg" width="65" height="48.5" layout="responsive" alt="a sample image"></amp-img>
+        </button>
+        <button class='btn-4' on="tap:carousel-with-preview.goToSlide(index=3)">
+          <amp-img src="img/img4.jpg" width="65" height="48.5" layout="responsive" alt="a sample image"></amp-img>
+        </button>
+        <button class='btn-5' on="tap:carousel-with-preview.goToSlide(index=4)">
+          <amp-img src="img/img5.jpg" width="65" height="48.5" layout="responsive" alt="a sample image"></amp-img>
+          </button>
+        <button class='btn-6' on="tap:carousel-with-preview.goToSlide(index=5)">
+          <amp-img src="img/img6.jpg" width="65" height="48.5" layout="responsive" alt="a sample image"></amp-img>
+        </button>
+        <button class='btn-7' on="tap:carousel-with-preview.goToSlide(index=6)">
+          <amp-img src="img/img7.jpg" width="65" height="48.5" layout="responsive" alt="a sample image"></amp-img>
+        </button>
+        <button class='btn-8' on="tap:carousel-with-preview.goToSlide(index=7)">
+          <amp-img src="img/img8.jpg" width="65" height="48.5" layout="responsive" alt="a sample image"></amp-img>
+        </button>    
 
-
+    section#accredition.section
+      header
+        h2 services
+        p.tagline section tagline
+      .flext
+        .half
+          <amp-img src="img/chas.png" alt="" height="600" width="800" layout="responsive" ></amp-img>
+        .half
+          h3 who are CHAS?
+          p
+            |CHAS are an authorative accredition company that ensures its members comply with the most strignent health and safety legistation. All our members receive expert advice on safety, efficiency and environmental apsects concerning the construction industry
+          p
+            |Many organisations insist their contractors are health and safety accredited. CHAS members are automatically approved by over 1000 organisations By continually assessing all members, CHAS provide you with the assuarance and high safety standards you're entitled to expect... find out more
 
 
 
