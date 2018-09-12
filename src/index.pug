@@ -6,6 +6,7 @@ html(amp, lang="en")
     link(rel="canonical", href="/index.html")
     meta(name="viewport", content="width=device-width,minimum-scale=1,initial-scale=1")
     <script custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js" async></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300" rel="stylesheet">
     script(type="application/ld+json").
       {
         "@context": "http://schema.org",
@@ -29,25 +30,25 @@ html(amp, lang="en")
           h1 building contractor
           p.quick-contact 
             |Tel: 01709 889184<br/>info@vbirdconstruction.co.uk         
-          p.title-tag 
-            |Refurbishment &amp Voids<br/> 
-            |New Builds & Regeneration Projects
+
           
         .half
           .features
             p
-            |Property refurbishment<br/>
-            |New Build Homes<br/>
-            |Apartment Fitouts<br/>
-            |Property Renovation<br/>
-            |Regeneration & Void Schemes
-          .about
-            h3 About Us
-            p
-              |A family run business with over 20 years experience in building and refurbishment works. Working with both corporate & private clients, throughout Yorkshire and the Midlands, to provide a high level of service & expertise.
+              |Refurbishment &amp Voids<br/> 
+              |New Builds & Regeneration Projects<br>            
+              |Property refurbishment<br/>
+              |Apartment Fitouts<br/>
+              |Property Renovation
+ 
+
 
     section#majors.section
-      header  
+      header
+      .about
+        h3 About Us
+        p
+          |<span class='first'>A</span> family run business with over 20 years experience in building and refurbishment works. Working with both corporate & private clients, throughout Yorkshire and the Midlands, to provide a high level of service & expertise.
         h2 major projects
       .major-grid
         .major
@@ -92,11 +93,9 @@ html(amp, lang="en")
         h2 services
         p.tagline section tagline
       .flext 
-        .third
-          figure
-            <amp-img src="" alt=""></amp-img>
-            figcaption
-              h3 figcaption title          
+        .third.effect5
+          <amp-img class='round' src="img/loft.jpg" width="175" height="175" layout="fixed" alt="a sample image"></amp-img>
+          h3 Loft Conversions        
         .third
           figure
             <amp-img src="" alt=""></amp-img>
@@ -170,7 +169,7 @@ html(amp, lang="en")
 
     section#accredition.section
       header
-        h2 services
+        h2 accredition
         p.tagline section tagline
       .flext
         .half
