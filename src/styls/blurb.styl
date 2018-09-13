@@ -1,0 +1,38 @@
+#blurb
+    .flext 
+        align-items center
+    .half:nth-child(1)
+        border-right 3px solid $lav
+.big-text
+    color $lav 
+    font-size 2.4rem
+    line-height 1
+    text-align right
+    margin 0
+
+.about 
+    // background rgba(complement($val),.4)
+    margin 0 auto 
+    padding .6rem
+    text-align center
+    max-width 600px
+    p  
+        font-size 1.3rem
+        line-height 1.2
+        color $val
+        margin-top 0
+
+@media screen and (min-width: 640px)  
+    .about 
+        margin-bottom 1rem
+        text-align left
+        p 
+            font-size 1.2rem
+            .first
+                color $lav
+                font-size 3.2rem
+                line-height 2.3rem
+                font-family Georgia
+                float left
+                padding-top .5rem
+                padding-right .2rem

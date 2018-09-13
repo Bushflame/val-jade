@@ -26,13 +26,14 @@ $lav=#806b00
             h3 
                 margin-bottom 0
 
-.intro 
-    padding 0
-    margin-bottom 0
-    // align-self flex-start
-.logo 
-    max-width 350px
-    margin 0 auto
+        .intro 
+            padding 0
+            margin-bottom 0
+
+        .logo 
+            max-width 350px
+            margin 0 auto
+            transform: perspective(400px) rotateY(50deg)
 h1 
     color $val
     font-size 2.4rem
@@ -59,17 +60,7 @@ h1
     padding 0
     margin-top 0
     font-weight bold 
-.about 
-    // background rgba(complement($val),.4)
-    margin 0 auto 
-    padding .6rem
-    text-align center
-    max-width 600px
-    p  
-        font-size 1.3rem
-        line-height 1.2
-        color $val
-        margin-top 0
+
 @media screen and (min-width: 640px)  
     .quick-contact 
         padding 0
@@ -81,19 +72,6 @@ h1
         padding-left 2rem
         background transparent
         text-align left 
-    .about 
-        margin-bottom 1rem
-        text-align left
-        p 
-            font-size 1.2rem
-            .first
-                color $lav
-                font-size 3.2rem
-                line-height 2.3rem
-                font-family Georgia
-                float left
-                padding-top .5rem
-                padding-right .2rem
+
                 
-.end-top 
-    color orange            
+           

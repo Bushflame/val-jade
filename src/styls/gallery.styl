@@ -2,7 +2,8 @@
 $val=#001580
 $lav=#806b00
 
-#gallery 
+#gallery
+    position relative 
     padding 1rem
     // amp-carousel 
     //     display flex
@@ -15,6 +16,7 @@ $lav=#806b00
         // overflow hidden
     .carousel-wrap
         display grid
+        position relative
         // grid-template-columns repeat(4,1fr)
         max-width 960px
         grid-template-rows 3        
@@ -132,23 +134,48 @@ $lav=#806b00
     //         margin auto
 
 //required to fix bug awaiting response / updates on github
-.i-amphtml-slides-container::-webkit-scrollbar {
-  height: 0px;
+// .i-amphtml-slides-container::-webkit-scrollbar {
+//   height: 0px;
+// }
+
+// ::-webkit-scrollbar { 
+//     display: none; 
+// }
+amp-carousel 
+    margin-bottom -10px
+    position fixed
+    bottom -2rem
+    left 0
+    right 0
+
+
+div::-webkit-scrollbar {
+//  height: 0px;
+ display:none
 }
+div::-moz-scrollbar {
+ height: 0px;
+ display:none
+}
+
 
 //https://www.google.com/url?q=https%3A%2F%2Fcodepen.io%2Faghassemi%2Fpen%2FMQXZXa&sa=D&sntz=1&usg=AFQjCNGDawqzxzca_bVDHgK4R9HtEoRBlQ
 .amp-carousel-slide {
     opacity: 0;
 }
-.amp-carousel-slide[aria-hidden=false] {
+.amp-carousel-slide[aria-hidden=false] 
     transition: all 1s;
     opacity: 1;
-}
+    margin 0
+    padding 0
+    height 100.1%
+ 
 
-.amp-carousel-slide {
-    transform: scale(.1);
-} 
-.amp-carousel-slide[aria-hidden=false] {
-    transition-duration: 1s;
+
+
+.amp-carousel-slide 
+    transform: scale(.1)
+
+.amp-carousel-slide[aria-hidden=false] 
+    transition-duration: 1s
     transform: scale(1)
-}
