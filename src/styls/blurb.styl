@@ -1,10 +1,16 @@
 #blurb
     background: #fff 
-    background darken($val,60%)   
+    background darken($val,60%)
+    padding-bottom 0   
     .flext 
         align-items center
     .half:nth-child(1)
         border-right 3px solid $lav
+        background-image url('./img/worker-f.png')
+        background-repeat no-repeat
+        background-size 240px auto
+        background-position left bottom
+        align-items center
 .big-text
     color $lav 
     font-size 2.4rem
@@ -17,11 +23,12 @@
     margin 0 auto 
     padding .6rem
     text-align center
-    max-width 600px
+    color lighten($val, 50%)
+    h3 
+        color lighten($val, 60%)    
     p  
         font-size 1.3rem
-        line-height 1.2
-        color $val
+        line-height 1.2     
         margin-top 0
 
 @media screen and (min-width: 640px)  

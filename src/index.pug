@@ -2,11 +2,13 @@ doctype
 html(amp, lang="en")
   head
     meta(charset="utf-8")
-    title AMP via Jade
+    title AMP via Pug
     link(rel="canonical", href="/index.html")
     meta(name="viewport", content="width=device-width,minimum-scale=1,initial-scale=1")
     <script custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js" async></script>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300" rel="stylesheet">
+    //- <link href="https://fonts.googleapis.com/css?family=Raleway:200,300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+ 
     script(type="application/ld+json").
       {
         "@context": "http://schema.org",
@@ -26,7 +28,8 @@ html(amp, lang="en")
     section#top
       .flext
         header.half.intro
-          <amp-img class="logo" width="240" height="80" layout="fixed" src="img/logo.svg"></amp-img>
+          .logo-wrap
+            <amp-img class="logo" width="240" height="80" layout="fixed" src="img/logo.svg"></amp-img>
           h1 building contractor
           p.quick-contact 
             |Tel: 01709 889184<br/>Mobile: 07976761639<br/> info@vbirdconstruction.co.uk        
@@ -137,7 +140,6 @@ html(amp, lang="en")
     #gallery.section
       header
         h2 gallery
-        p.tagline section tagline
       .carousel-wrap.carousel-preview
         .carousel
           <amp-carousel id="carousel-with-preview" width="261" height="195" layout="responsive" type="slides">
@@ -189,5 +191,24 @@ html(amp, lang="en")
           p
             |Many organisations insist their contractors are health and safety accredited. CHAS members are automatically approved by over 1000 organisations By continually assessing all members, CHAS provide you with the assuarance and high safety standards you're entitled to expect... find out more
 
-
+    section#contact.section
+      .flext
+        .half
+          .details
+            <i class="material-icons">email</i>
+            p email address 
+          .details
+            <i class="material-icons">local_phone</i>
+            p Tel:
+          .details
+            <i class="material-icons">phone_iphone</i>
+            p Mobile:
+          .details
+            <i class="material-icons">location_city</i>
+            p 
+              |43 Lancaster Street<br/>
+              |Thurnscoe<br/>
+              |Rotherham<br/>
+              |Yorkshire
+        .half
 
